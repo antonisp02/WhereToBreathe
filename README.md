@@ -31,5 +31,8 @@ Once these selections are made, the app calculates an Air Quality Index (AQI) sc
 
 The AQI calculation uses daily average concentrations of NO₂ (Nitrogen Dioxide), O₃ (Ozone), and SO₂ (Sulfur Dioxide). These values are derived from hourly open data measurements and processed using linear interpolation based on European air quality standards.
 
+**Website**
+https://users.iee.ihu.gr/~iee2021087/WhereToBreathe.html
+
 ![image](https://github.com/user-attachments/assets/62b0b1e3-0a85-424a-8da8-03dfd574ee08)
 
