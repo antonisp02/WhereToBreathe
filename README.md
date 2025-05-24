@@ -4,6 +4,7 @@
 WhereToBreathe is a browser-based web application that helps users determine whether it's safe to engage in outdoor activities, based on air quality data and personal sensitivity to pollution. It offers guidance by combining environmental data with interactive tools like maps and calendars.
 
 
+
 **What Problem Does It Solve?**
 
 Air pollution poses serious health risks, particularly to vulnerable populations such as the elderly or people with respiratory conditions. However, most available tools only provide raw data without personalized advice. WhereToBreathe addresses this by offering tailored recommendations based on:
@@ -13,6 +14,7 @@ Air pollution poses serious health risks, particularly to vulnerable populations
 This helps individuals make informed decisions about when and where it is safe to be outdoors.
 
 
+
 **How It Works**
 
 Users interact with:
@@ -20,6 +22,7 @@ Users interact with:
   2. A custom calendar to choose a date.
   3. A sensitivity selector (low, moderate, or high).
 Once these selections are made, the app calculates an Air Quality Index (AQI) score and gives a personalized recommendation.
+
 
 
 📌 **Note**: At this time, the application includes air quality and weather data only for January 2024.
