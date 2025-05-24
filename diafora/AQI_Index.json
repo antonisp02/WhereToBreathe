@@ -1,0 +1,26 @@
+[
+    {
+        "AQI Category": "Good",
+        "Index": "0-25"
+    },
+    {
+        "AQI Category": "Fair",
+        "Index": "25-50"
+    },
+    {
+        "AQI Category": "Moderate",
+        "Index": "50-75"
+    },
+    {
+        "AQI Category": "Poor",
+        "Index": "75-100"
+    },
+    {
+        "AQI Category": "Very poor",
+        "Index": "100-125"
+    },
+    {
+        "AQI Category": "Extremely poor",
+        "Index": "125-150"
+    }
+]
