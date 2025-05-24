@@ -5,22 +5,18 @@ WhereToBreathe is a browser-based web application that helps users determine whe
 What Problem Does It Solve?
 Air pollution poses serious health risks, particularly to vulnerable populations such as the elderly or people with respiratory conditions. However, most available tools only provide raw data without personalized advice. WhereToBreathe addresses this by offering tailored recommendations based on:
 
-The user’s selected location within Thessaloniki.
-
-Their sensitivity to air pollution.
-
-The air quality conditions on a chosen date.
+  • The user’s selected location within Thessaloniki.
+  • Their sensitivity to air pollution.
+  • The air quality conditions on a chosen date.
 
 This helps individuals make informed decisions about when and where it is safe to be outdoors.
 
 How It Works
+
 Users interact with:
-
-An interactive map of Thessaloniki, selecting one of several predefined areas.
-
-A custom calendar to choose a date.
-
-A sensitivity selector (low, moderate, or high).
+  1. An interactive map of Thessaloniki, selecting one of several predefined areas.
+  2. A custom calendar to choose a date.
+  3. A sensitivity selector (low, moderate, or high).
 
 Once these selections are made, the app calculates an Air Quality Index (AQI) score and gives a personalized recommendation.
 
