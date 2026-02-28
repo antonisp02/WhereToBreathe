@@ -1,0 +1,576 @@
+/* ============================================
+   WhereToBreathe – Air Quality Activity Planner
+   Main Stylesheet
+   ============================================ */
+
+/* ---------- CSS Custom Properties ---------- */
+:root {
+    --primary-color: #4CAF50;
+    --secondary-color: #8BC34A;
+    --accent-color: #2E7D32;
+    --light-color: #E8F5E9;
+    --dark-color: #1B5E20;
+    --warning-color: #FF9800;
+    --danger-color: #F44336;
+    --text-color: #333;
+    --text-muted: #666;
+    --white: #ffffff;
+    --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.08);
+    --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.12);
+    --shadow-lg: 0 8px 32px rgba(0, 0, 0, 0.16);
+    --radius-sm: 6px;
+    --radius-md: 10px;
+    --radius-lg: 16px;
+    --transition: 0.3s ease;
+    --font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* ---------- Reset & Base ---------- */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--font-family);
+    background-color: #f0f4f0;
+    color: var(--text-color);
+    line-height: 1.6;
+    min-height: 100vh;
+}
+
+/* ---------- Layout ---------- */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 24px;
+}
+
+/* ---------- Header ---------- */
+header {
+    background: linear-gradient(135deg, var(--accent-color), var(--primary-color));
+    color: var(--white);
+    padding: 24px 0;
+    border-radius: var(--radius-lg) var(--radius-lg) 0 0;
+    box-shadow: var(--shadow-md);
+    position: relative;
+    overflow: hidden;
+}
+
+header::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    right: -20%;
+    width: 300px;
+    height: 300px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 50%;
+    pointer-events: none;
+}
+
+header h1 {
+    margin: 0;
+    padding: 0 24px;
+    display: flex;
+    align-items: center;
+    font-size: 1.6rem;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+}
+
+header h1 svg {
+    margin-right: 12px;
+    flex-shrink: 0;
+}
+
+header .subtitle {
+    padding: 4px 24px 0;
+    opacity: 0.85;
+    font-size: 0.95rem;
+    font-weight: 400;
+    margin-left: 36px;
+}
+
+/* ---------- Main Content ---------- */
+.content {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--white);
+    border-radius: 0 0 var(--radius-lg) var(--radius-lg);
+    box-shadow: var(--shadow-md);
+    overflow: hidden;
+}
+
+/* ---------- Map ---------- */
+.map-container {
+    height: 420px;
+    position: relative;
+    border-bottom: 3px solid var(--light-color);
+}
+
+.map {
+    height: 100%;
+    width: 100%;
+    background-color: #e5f5e0;
+    position: relative;
+}
+
+/* ---------- Weather Widget ---------- */
+.weather-widget {
+    position: absolute;
+    background-color: var(--white);
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-lg);
+    padding: 16px;
+    width: 220px;
+    top: 16px;
+    right: 16px;
+    display: none;
+    z-index: 1000;
+    border-left: 4px solid var(--primary-color);
+    backdrop-filter: blur(8px);
+    animation: slideIn 0.3s ease;
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.weather-widget h3 {
+    margin-top: 0;
+    color: var(--dark-color);
+    border-bottom: 1px solid var(--light-color);
+    padding-bottom: 8px;
+    margin-bottom: 10px;
+    font-size: 1rem;
+}
+
+.weather-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.weather-icon {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.weather-details p {
+    margin: 4px 0;
+}
+
+.weather-temp {
+    font-size: 1.3em;
+    font-weight: 700;
+    color: var(--dark-color);
+}
+
+.weather-stats p {
+    margin: 4px 0;
+    font-size: 0.9em;
+    color: var(--text-muted);
+}
+
+/* ---------- Controls ---------- */
+.controls {
+    padding: 24px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+
+.calendar-container,
+.sensitivity-container {
+    flex: 1;
+    min-width: 300px;
+}
+
+h2 {
+    color: var(--dark-color);
+    margin-top: 0;
+    margin-bottom: 12px;
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+/* ---------- Calendar ---------- */
+.calendar {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: var(--white);
+    border-radius: var(--radius-md);
+    overflow: hidden;
+    box-shadow: var(--shadow-sm);
+}
+
+.calendar th {
+    background-color: var(--secondary-color);
+    color: var(--white);
+    padding: 10px;
+    font-weight: 600;
+    font-size: 0.9em;
+}
+
+.calendar td {
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    font-size: 0.95em;
+}
+
+.calendar td:hover {
+    background-color: var(--light-color);
+}
+
+.calendar td.selected {
+    background-color: var(--primary-color);
+    color: var(--white);
+    font-weight: 600;
+    border-radius: var(--radius-sm);
+}
+
+.calendar td.today {
+    font-weight: bold;
+    border: 2px solid var(--secondary-color);
+    border-radius: var(--radius-sm);
+}
+
+.calendar td.unavailable {
+    color: #ccc;
+    cursor: not-allowed;
+}
+
+/* Calendar navigation */
+.calendar-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 5px;
+}
+
+.calendar-nav-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 4px;
+    border-radius: var(--radius-sm);
+    transition: background-color var(--transition);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.calendar-nav-btn:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.calendar-today-wrapper {
+    text-align: center;
+    margin-top: 8px;
+}
+
+.today-btn {
+    background-color: var(--secondary-color);
+    color: var(--white);
+    border: none;
+    border-radius: var(--radius-sm);
+    padding: 3px 12px;
+    cursor: pointer;
+    font-size: 0.8em;
+    font-weight: 600;
+    transition: all var(--transition);
+}
+
+.today-btn:hover {
+    background-color: var(--accent-color);
+    transform: translateY(-1px);
+}
+
+/* ---------- Sensitivity Buttons ---------- */
+.sensitivity-description {
+    color: var(--text-muted);
+    margin-bottom: 16px;
+    font-size: 0.95em;
+}
+
+.sensitivity-buttons {
+    display: flex;
+    gap: 12px;
+    margin-top: 16px;
+}
+
+.sensitivity-btn {
+    flex: 1;
+    padding: 16px 12px;
+    border: none;
+    border-radius: var(--radius-md);
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 0.9em;
+    transition: all var(--transition);
+    box-shadow: var(--shadow-sm);
+    position: relative;
+    overflow: hidden;
+}
+
+.sensitivity-btn::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0);
+    transition: background var(--transition);
+}
+
+.sensitivity-btn:hover::after {
+    background: rgba(255, 255, 255, 0.15);
+}
+
+.sensitivity-btn.low {
+    background-color: #E8F5E9;
+    color: var(--dark-color);
+    border: 2px solid var(--primary-color);
+}
+
+.sensitivity-btn.moderate {
+    background-color: #FFF8E1;
+    color: #F57F17;
+    border: 2px solid var(--warning-color);
+}
+
+.sensitivity-btn.high {
+    background-color: #FFEBEE;
+    color: #B71C1C;
+    border: 2px solid var(--danger-color);
+}
+
+.sensitivity-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: var(--shadow-md);
+}
+
+.sensitivity-btn.selected {
+    transform: scale(1.04);
+    box-shadow: var(--shadow-lg);
+}
+
+.sensitivity-btn.selected.low {
+    background-color: var(--primary-color);
+    color: var(--white);
+}
+
+.sensitivity-btn.selected.moderate {
+    background-color: var(--warning-color);
+    color: var(--white);
+}
+
+.sensitivity-btn.selected.high {
+    background-color: var(--danger-color);
+    color: var(--white);
+}
+
+/* ---------- Results ---------- */
+.results {
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: var(--radius-md);
+    display: none;
+    animation: fadeIn 0.4s ease;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(8px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.results.good {
+    background-color: rgba(76, 175, 80, 0.12);
+    border: 2px solid var(--primary-color);
+}
+
+.results.moderate {
+    background-color: rgba(255, 152, 0, 0.12);
+    border: 2px solid var(--warning-color);
+}
+
+.results.poor {
+    background-color: rgba(244, 67, 54, 0.12);
+    border: 2px solid var(--danger-color);
+}
+
+.result-title {
+    margin-top: 0;
+    display: flex;
+    align-items: center;
+    font-size: 1.15rem;
+}
+
+.result-title svg {
+    margin-right: 10px;
+    flex-shrink: 0;
+}
+
+#result-message {
+    margin: 12px 0 8px;
+    line-height: 1.7;
+}
+
+#result-details {
+    color: var(--text-muted);
+    font-size: 0.95em;
+}
+
+/* ---------- Loading Overlay ---------- */
+.loading-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.92);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    transition: opacity 0.4s ease;
+}
+
+.loading-overlay.hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.loading-spinner {
+    width: 48px;
+    height: 48px;
+    border: 4px solid var(--light-color);
+    border-top: 4px solid var(--primary-color);
+    border-radius: 50%;
+    animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.loading-text {
+    margin-top: 16px;
+    color: var(--dark-color);
+    font-weight: 600;
+    font-size: 0.95rem;
+}
+
+/* ---------- Footer ---------- */
+footer {
+    text-align: center;
+    margin-top: 32px;
+    padding: 20px;
+    color: var(--text-muted);
+    font-size: 0.85em;
+}
+
+footer a {
+    color: var(--accent-color);
+    text-decoration: none;
+    transition: color var(--transition);
+}
+
+footer a:hover {
+    color: var(--dark-color);
+    text-decoration: underline;
+}
+
+/* ---------- Leaflet Popup Customization ---------- */
+.leaflet-popup-content-wrapper {
+    border-radius: var(--radius-md) !important;
+    box-shadow: var(--shadow-md) !important;
+}
+
+.leaflet-popup-content {
+    margin: 12px 16px !important;
+    font-family: var(--font-family) !important;
+    line-height: 1.6 !important;
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 768px) {
+    .container {
+        padding: 12px;
+    }
+
+    header h1 {
+        font-size: 1.2rem;
+    }
+
+    header .subtitle {
+        font-size: 0.85rem;
+        margin-left: 0;
+        padding-left: 24px;
+    }
+
+    .controls {
+        flex-direction: column;
+        padding: 16px;
+    }
+
+    .calendar-container,
+    .sensitivity-container {
+        min-width: unset;
+    }
+
+    .map-container {
+        height: 300px;
+    }
+
+    .weather-widget {
+        width: 170px;
+        font-size: 0.88em;
+        padding: 12px;
+    }
+
+    .sensitivity-buttons {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1rem;
+    }
+
+    .map-container {
+        height: 250px;
+    }
+}

@@ -1,0 +1,38 @@
+[
+    {
+        "AQI Category": "Good",
+        "no2_conc": "0–40",
+        "o3_conc": "0-50",
+        "so2_conc": "0-100"
+    },
+    {
+        "AQI Category": "Fair",
+        "no2_conc": "41-90",
+        "o3_conc": "51-100",
+        "so2_conc": "101-200"
+    },
+    {
+        "AQI Category": "Moderate",
+        "no2_conc": "91-120",
+        "o3_conc": "101-130",
+        "so2_conc": "201-350"
+    },
+    {
+        "AQI Category": "Poor",
+        "no2_conc": "121-230",
+        "o3_conc": "131-240",
+        "so2_conc": "351-500"
+    },
+    {
+        "AQI Category": "Very poor",
+        "no2_conc": "231-340",
+        "o3_conc": "241-380",
+        "so2_conc": "501-750"
+    },
+    {
+        "AQI Category": "Extremely poor",
+        "no2_conc": "341-1000",
+        "o3_conc": "381-800",
+        "so2_conc": "751-1250"
+    }
+]

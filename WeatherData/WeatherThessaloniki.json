@@ -1,0 +1,220 @@
+[
+    {
+      "date": "2024-01-01",
+      "temperature": 9.1,
+      "humidity": 92,
+      "wind": 5.4,
+      "description": "Cloudy"
+    },
+    {
+      "date": "2024-01-02",
+      "temperature": 9.4,
+      "humidity": 91,
+      "wind": 6.5,
+      "description": "Cloudy"
+    },
+    {
+      "date": "2024-01-03",
+      "temperature": 8.0,
+      "humidity": 86,
+      "wind": 7.0,
+      "description": "Cloudy"
+    },
+    {
+      "date": "2024-01-4",
+      "temperature": 5,
+      "humidity": 75,
+      "wind": 6.5,
+      "description": "Cloudy"
+    },
+    {
+      "date": "2024-01-5",
+      "temperature": 4,
+      "humidity": 70,
+      "wind": 6,
+      "description": "Cloudy"
+    },
+    {
+      "date": "2024-01-6",
+      "temperature": 5,
+      "humidity": 75,
+      "wind": 6.5,
+      "description": "Cloudy"
+    },
+    {
+      "date": "2024-01-07",
+      "temperature": 10.4,
+      "humidity": 96,
+      "wind": 9.1,
+      "description": "Rain"
+    },
+    {
+      "date": "2024-01-08",
+      "temperature": 10.1,
+      "humidity": 80,
+      "wind": 6.5,
+      "description": "Partly Cloudy"
+    },
+    {
+      "date": "2024-01-09",
+      "temperature": 5.7,
+      "humidity": 91,
+      "wind": 17.6,
+      "description": "Rain"
+    },
+    {
+      "date": "2024-01-10",
+      "temperature": 5,
+      "humidity": 75,
+      "wind": 6.5,
+      "description": "Cloudy"
+    },
+    {
+      "date": "2024-01-11",
+      "temperature": 4,
+      "humidity": 70,
+      "wind": 6,
+      "description": "Cloudy"
+    },
+    {
+      "date": "2024-01-12",
+      "temperature": 1.5,
+      "humidity": 71,
+      "wind": 7.2,
+      "description": "Clear"
+    },
+    {
+      "date": "2024-01-13",
+      "temperature": 3.8,
+      "humidity": 49,
+      "wind": 20.9,
+      "description": "Clear"
+    },
+    {
+      "date": "2024-01-14",
+      "temperature": 1.5,
+      "humidity": 71,
+      "wind": 7.2,
+      "description": "Clear"
+    },
+    {
+      "date": "2024-01-15",
+      "temperature": 3.8,
+      "humidity": 82,
+      "wind": 6.3,
+      "description": "Cloudy"
+    },
+    {
+      "date": "2024-01-16",
+      "temperature": 1.5,
+      "humidity": 71,
+      "wind": 7.2,
+      "description": "Clear"
+    },
+    {
+      "date": "2024-01-17",
+      "temperature": 5,
+      "humidity": 75,
+      "wind": 6.5,
+      "description": "Cloudy"
+    },
+    {
+      "date": "2024-01-18",
+      "temperature": 4,
+      "humidity": 70,
+      "wind": 6,
+      "description": "Cloudy"
+    },
+    {
+      "date": "2024-01-19",
+      "temperature": 13.9,
+      "humidity": 64,
+      "wind": 7.8,
+      "description": "Sunny"
+    },
+    {
+      "date": "2024-01-20",
+      "temperature": 6.3,
+      "humidity": 86,
+      "wind": 23.7,
+      "description": "Rain"
+    },
+    {
+      "date": "2024-01-21",
+      "temperature": 3.8,
+      "humidity": 81,
+      "wind": 15.0,
+      "description": "Rain"
+    },
+    {
+      "date": "2024-01-22",
+      "temperature": 3.8,
+      "humidity": 82,
+      "wind": 6.3,
+      "description": "Cloudy"
+    },
+    {
+      "date": "2024-01-23",
+      "temperature": 1.5,
+      "humidity": 71,
+      "wind": 7.2,
+      "description": "Clear"
+    },
+    {
+      "date": "2024-01-24",
+      "temperature": 1.5,
+      "humidity": 71,
+      "wind": 7.2,
+      "description": "Clear"
+    },
+    {
+      "date": "2024-01-25",
+      "temperature": 8.4,
+      "humidity": 60,
+      "wind": 15.9,
+      "description": "Partly Cloudy"
+    },
+    {
+      "date": "2024-01-26",
+      "temperature": 11.1,
+      "humidity": 47,
+      "wind": 28.0,
+      "description": "Sunny"
+    },
+    {
+      "date": "2024-01-27",
+      "temperature": 8.0,
+      "humidity": 52,
+      "wind": 24.3,
+      "description": "Rain"
+    },
+    {
+      "date": "2024-01-28",
+      "temperature": 13.9,
+      "humidity": 64,
+      "wind": 7.8,
+      "description": "Sunny"
+    },
+    {
+      "date": "2024-01-29",
+      "temperature": 6.3,
+      "humidity": 86,
+      "wind": 23.7,
+      "description": "Rain"
+    },
+    {
+      "date": "2024-01-30",
+      "temperature": 3.8,
+      "humidity": 81,
+      "wind": 15.0,
+      "description": "Rain"
+    },
+    {
+      "date": "2024-01-31",
+      "temperature": 2.8,
+      "humidity": 54,
+      "wind": 8.0,
+      "description": "Clear"
+    }
+  ]
+  
