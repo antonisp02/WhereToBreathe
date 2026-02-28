@@ -33,3 +33,4 @@ The AQI calculation uses daily average concentrations of NO₂ (Nitrogen Dioxide
 
 **The website is live and ready to use!**
 
+<img width="1920" height="1042" alt="Screenshot of the site" src="https://github.com/user-attachments/assets/fbaeb499-377d-4ba4-be9d-7622a18af5a2" />
